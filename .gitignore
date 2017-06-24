@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+increment/increment
+increment/test/increment.t
+pivot/pivot
+pivot/test/pivot.t
+.obj
+.gitignore.swp
