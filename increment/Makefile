@@ -1,4 +1,4 @@
-CXX=clang++-3.5
+CXX=clang++
 TGT =increment
 TST =$(TGT).t
 DEBUG =-g
@@ -22,7 +22,7 @@ test/$(TST): $(TGT).o test/.obj/$(TST).o
 test/.obj/%.o: test/%.cc
 	$(COMPILE.cc) $(OUTPUT_OPTION) $<
 
-main.o: main.cc asm6502.h
+main.o: main.cc $(TGT).h
 
 $(TGT).o: $(TGT).cc $(TGT).h
 
