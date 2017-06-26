@@ -9,16 +9,17 @@ LD=clang++
 
 $(TGT): $(OBJS)
 
-test/$(TST): $(TGT).o test/.obj/$(TST).o
+test/$(TST): test/.obj/$(TST).o .obj/$(TGT).o 
+	$(LD) $^ $(TESTLIBS) -o $@
 
-main.o: main.cc $(TGT).h
+.obj/main.o: main.cc $(TGT).h
 
 .obj/$(TGT).o: $(TGT).cc $(TGT).h
 
 test/.obj/$(TST).o: test/$(TST).cc $(TGT).o
 
 clean:
-	$(RM) .obj/*.o *~ $(TGT) test/.obj/*.o $(TST)
+	$(RM) *~ .obj/*.o $(TGT) test/.obj/*.o test/$(TST)
 
 test: test/$(TST)
 	test/$(TST)

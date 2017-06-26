@@ -33,6 +33,8 @@
 
 increment/increment
 increment/test/increment.t
+multiply/multiply
+multiply/test/multiply.t
 pivot/pivot
 pivot/test/pivot.t
 .obj
