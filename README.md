@@ -16,3 +16,27 @@
  
 - 5.8 **alternation** - Write a program that takes an array of integers as input and rearranges the elements so that for an array *a* of length n, *a[0]* <= *a[1]* >= *a[2]* <= *a[3]* >= *a[4]* *...* *a[n-1]*.
 
+- 5.9 **primes** - Write a program that takes a number *n* and returns all the prime numbers less than *n*.
+
+- 5.10 **permutation** - Write a program that takes an two arrays: an array *P* of n different positive integers and an array *A* of the position that each integer should be in for the permutation and applies *P* to *A*. For example if A is {2, 3, 4, 5} and P is {3, 0, 2, 1} the program would return {5, 2, 4, 3}.
+
+- 5.11 **next_permutation** -  Write a program that takes an array of different positive integers and returns the next permutation in ascending order.
+
+- 5.12 **offline_data** -  Write a program that takes
+
+- 5.13 **online_data** -  Write a program that takes
+
+- 5.14 **random_permutation** -  Write a program that takes
+
+- 5.15 **random_subset** -  Write a program that takes
+
+- 5.16 **nonuniform_random** -  Write a program that takes
+
+- 5.17 **sudoku** -  Write a program that takes a 2-d array representing a sudoku game (that has not been started) and confirm that it is valid.
+
+- 5.18 **spiral** -  Write a program that takes a 2-d array and prints out the elements in spiral order from the outside to the middle.
+
+- 5.19 **rotate** -  Write a program that takes a 2-d array and rotates the values 90 degrees clockwise. 
+
+- 5.20 **pascals_triangle** -  Write a program that takes
+
