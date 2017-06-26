@@ -5,5 +5,5 @@
 
 void dump(const std::vector<int>& a);
 
-void increment(std::vector<int>& a);
+std::vector<int> multiply(std::vector<int>& a, std::vector<int>& b);
 #endif

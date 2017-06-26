@@ -3,11 +3,12 @@
 
 using namespace std;
 
-TEST(increment_test, ctor) {
-  vector<int> num01{1, 2, 3};
-  vector<int> expected_inc{1, 2, 4};
-  increment(num01);
-  EXPECT_EQ (expected_inc, num01);
+TEST(multiply_test, ctor) {
+  vector<int> num01{1, 2};
+  vector<int> num02{1, 2};
+  vector<int> expected_prod{1, 4, 4};
+  auto actual_prod = multiply(num01, num02);
+  EXPECT_EQ (expected_prod, actual_prod);
 }
 
 int main(int argc, char **argv) {

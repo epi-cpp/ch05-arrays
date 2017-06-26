@@ -11,21 +11,28 @@ using namespace std;
 int main(int argc, char* argv[]) {
   default_random_engine seed((random_device())());
   string numStr;
-  string iStr, jStr;
   while (true) { 
-    vector<int> nums;
-    cout << "Enter an number or 'q' to exit: ";
+    vector<int> mult1;
+    vector<int> mult2;
+    cout << "Enter two numbers or 'q' to exit: ";
     cin >> numStr;
     if (numStr == "q") {
       break;
     }
     else {
-      nums.clear();
-      copy(numStr.begin(), numStr.end(), back_inserter(nums));
-      for (auto& d : nums) d -= '0';
-      increment(nums);
-      cout << numStr << "+1 = ";
-      dump(nums);
+      mult1.clear();
+      copy(numStr.begin(), numStr.end(), back_inserter(mult1));
+      cin >> numStr;
+      mult2.clear();
+      copy(numStr.begin(), numStr.end(), back_inserter(mult2));
+      for (auto& d : mult1) d -= '0';
+      for (auto& d : mult2) d -= '0';
+      auto prod = multiply(mult1, mult2);
+      dump(mult1);
+      cout << " * ";
+      dump(mult2);
+      cout << " = ";
+      dump(prod);
     }
   }
   return 0;
