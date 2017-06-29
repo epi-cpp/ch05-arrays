@@ -31,11 +31,14 @@
 *.out
 *.app
 
+.obj
+.gitignore.swp
+
+adv_game/adv_game
+adv_game/test/adv_game.t
 increment/increment
 increment/test/increment.t
 multiply/multiply
 multiply/test/multiply.t
 pivot/pivot
 pivot/test/pivot.t
-.obj
-.gitignore.swp

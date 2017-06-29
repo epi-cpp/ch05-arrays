@@ -38,5 +38,4 @@
 
 - 5.19 **rotate** -  Write a program that takes a 2-d array and rotates the values 90 degrees clockwise. 
 
-- 5.20 **pascals_triangle** -  Write a program that takes
-
+- 5.20 **pascals_triangle** -  Write a program that takesn as inut and returns the first n rows of Pascal's triangle.

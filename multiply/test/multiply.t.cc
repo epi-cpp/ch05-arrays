@@ -3,7 +3,7 @@
 
 using namespace std;
 
-TEST(multiply_test, ctor) {
+TEST(multiply_test, two_digit_numbers)) {
   vector<int> num01{1, 2};
   vector<int> num02{1, 2};
   vector<int> expected_prod{1, 4, 4};
