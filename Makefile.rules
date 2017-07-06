@@ -1,12 +1,13 @@
 .obj:
 	mkdir -p .obj test/.obj
 
-test/.obj/%.o: test/%.cc .obj
-	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+%.o: %.cc
 
 .obj/%.o: %.cc .obj
 	$(COMPILE.cc) $(OUTPUT_OPTION) $<
 
+test/.obj/%.o: test/%.cc .obj
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
 %: .obj/%.o
 	$(LD) $^ -o $@
-

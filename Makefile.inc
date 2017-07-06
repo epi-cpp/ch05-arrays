@@ -16,7 +16,7 @@ test/$(TST): test/.obj/$(TST).o .obj/$(TGT).o
 
 .obj/$(TGT).o: $(TGT).cc $(TGT).h
 
-test/.obj/$(TST).o: test/$(TST).cc $(TGT).o
+test/.obj/$(TST).o: test/$(TST).cc .obj/$(TGT).o
 
 clean:
 	$(RM) *~ .obj/*.o $(TGT) test/.obj/*.o test/$(TST)

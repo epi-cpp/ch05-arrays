@@ -42,3 +42,5 @@ multiply/multiply
 multiply/test/multiply.t
 pivot/pivot
 pivot/test/pivot.t
+dedup/dedup
+dedup/test/dedup.t
